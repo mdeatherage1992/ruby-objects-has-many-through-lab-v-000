@@ -1,6 +1,6 @@
 require "pry"
 class Patient
-  attr_accessor :name
+  attr_accessor :name, :appointments
   @@all = []
 
   def initialize(name)
@@ -17,7 +17,6 @@ class Patient
 
   def doctors
     appointments.map do |appointment|
-      binding.pry
       appointment.doctor
     end
   end
