@@ -20,7 +20,7 @@ class Genre
 
   def artists
     songs.each do |song|
-        song.genre == self
+        song.artist
     end
   end
 
