@@ -1,15 +1,7 @@
 class Doctor
-attr_accessor :name,:songs
-@@all = []
-
-def initialize(name)
-  @name = name
-  @appointments = []
-  @@all << self
-end
-
-def self.all
-  @@all
-end
-
-end
+  attr_accessor :name
+    @@all = []
+  def initialize(name)
+    @name = name
+    @@all << self
+  end
