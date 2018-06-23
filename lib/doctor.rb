@@ -19,6 +19,10 @@ class Doctor
     @appointments << new_appointment
   end
 
+  def appointments
+    @appointments
+  end
+
 
 
 
