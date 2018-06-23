@@ -12,10 +12,6 @@ class Genre
   end
 
   def songs
-    songs.all.select do |song|
-      songs.genre == self
-      @songs << song
-    end
   end
 
 
